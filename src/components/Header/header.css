@@ -1,0 +1,264 @@
+header {
+  background-color: #0746a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.logo-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo-wrapper img {
+  width: 35%;
+}
+.logo-wrapper .logo-text {
+  font-family: "Whitney SSm";
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: -0.5px;
+  margin-left: -3px;
+}
+.logo-form-wrapper form {
+  display: flex;
+  align-items: center;
+  background-color: #3b6ab8;
+  width: 90%;
+  border-radius: 2px;
+}
+.logo-form-wrapper form input {
+  font-family: "Whitney SSm";
+  background-color: #3b6ab8;
+  outline: none;
+  border: 0;
+  height: 30px;
+  color: white;
+  padding: 0 15px;
+  border-radius: 2px;
+  width: 100%;
+}
+.logo-form-wrapper form input::placeholder {
+  color: #92c0fd;
+}
+
+.ctas {
+  color: white;
+  font-family: "Whitney SSm";
+}
+
+.ctas a {
+  font-family: inherit;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.ctas a.request-quote {
+  border: 2px solid #4d86d7;
+  background-color: transparent;
+  margin-right: 10px;
+}
+.ctas a.book-shipment {
+  border: 2px solid #5ec586;
+  background-color: #5ec586;
+}
+/* Mobile Responsiveness */
+.mobile_search {
+  display: none;
+}
+.mobile_menu {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* body {
+    background-color: red;
+  } */
+  .logo-wrapper .logo-text {
+    font-size: 14px;
+  }
+  .logo-form-wrapper form {
+    display: none;
+  }
+  .ctas {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+  }
+  .mobile_search {
+    display: block;
+  }
+  .ctas a.request-quote,
+  .ctas a.book-shipment {
+    margin-right: 0;
+    padding: 6px 8px;
+    border: none;
+    display: inline;
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* .logo-wrapper .logo-text {
+    font-size: 12px;
+    margin-top: 0px;
+  } */
+  .ctas {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+  }
+
+  .menu-active {
+    display: block;
+  }
+
+  /* Mobile Menu Modal */
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background: #00000078;
+    height: 100%;
+    text-align: right;
+    transition: all 0.1s linear;
+    z-index: 100;
+  }
+
+  .open-menu {
+    right: 0;
+  }
+
+  .mobile_menu {
+    display: block;
+    fill: white;
+    font-size: 30px;
+  }
+  .menu {
+    /* display: flex;
+  flex-direction: column;
+  justify-content: end; */
+    background: white;
+    width: 80%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100vh;
+    padding: 20px;
+  }
+  .menu-active {
+    display: block;
+  }
+  .menu-inactive {
+    display: none;
+  }
+  .close_menu {
+    fill: black;
+    font-size: 30px;
+    display: inline-block;
+    display: inline-block;
+    margin: 20px 10px;
+  }
+
+  .mobile_form form {
+    display: flex;
+    align-items: center;
+    background-color: #3b6ab8;
+    width: 90%;
+    border-radius: 2px;
+  }
+  .mobile_form form input {
+    font-family: "Whitney SSm";
+    background-color: #3b6ab8;
+    outline: none;
+    border: 0;
+    height: 30px;
+    color: white;
+    padding: 0 15px;
+    border-radius: 2px;
+    width: 100%;
+  }
+
+  .mobile_form form input::placeholder {
+    color: #92c0fd;
+  }
+
+  .menu .ctas {
+    text-align: left;
+    color: white;
+    font-family: "Whitney SSm";
+  }
+
+  .menu .ctas svg {
+    display: none;
+  }
+
+  .menu .ctas a {
+    font-size: 14px;
+    color: black;
+    padding: 0;
+    display: block;
+    margin: 10px 0;
+  }
+  .call-to-action h4 {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .ctas_mobile {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .mobile_search {
+    display: block;
+  }
+
+  .menu .ctas a {
+    font-family: inherit;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+
+  .menu .ctas a.request-quote {
+    color: #909090;
+    border: 2px solid #4d86d7;
+    background-color: transparent;
+    margin-right: 10px;
+  }
+  .menu .ctas a.book-shipment {
+    border: 2px solid #5ec586;
+    background: #5ec586;
+  }
+  /* .call-to-action a.request-quote,
+  .call-to-action a.book-shipment {
+    margin-right: 0;
+    padding: 6px 8px;
+    border: none;
+    display: inline;
+    background: transparent;
+  } */
+}

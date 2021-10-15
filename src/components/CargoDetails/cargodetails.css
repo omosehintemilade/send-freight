@@ -1,0 +1,72 @@
+.cargo-toggle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.cargo-toggle {
+  display: flex;
+  justify-content: space-between;
+}
+.toggle-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+}
+.tabs-wrapper {
+  margin-bottom: 40px;
+}
+.tabs {
+  background-color: #f1f2f6;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 3px;
+}
+.tabs button {
+  color: #909090;
+  border: none;
+  padding: 8px 10px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+.active-tab {
+  color: #4380d1 !important;
+  background-color: white !important;
+}
+
+.cargo-form form {
+  display: flex;
+  margin-bottom: 50px;
+}
+.cargo-form form input {
+  width: 70%;
+  background-color: transparent;
+}
+fieldset {
+  border: 2px solid #e1e1e1;
+  width: 200px;
+  margin-right: 25px;
+}
+fieldset .text {
+  font-size: 13px !important;
+  color: #c0c0c0 !important;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+legend {
+  font-size: 14px;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .cargo-toggle {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .cargo-form form {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,97 @@
+.info-icon {
+  margin: 20px 0;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.second-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.icon-text-wrapper {
+  display: flex;
+}
+
+.imp-exp button {
+  color: #909090;
+  border: 1px solid #e1e1e1;
+  padding: 8px 10px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+.ctaform form {
+  margin-bottom: 20px;
+}
+form input {
+  background-color: #f3f3f3;
+  outline: none;
+  border: 0;
+  height: 30px;
+  padding: 0 15px;
+  padding-left: 4px;
+  border-radius: 5px;
+}
+form input::placeholder {
+  color: #c0c0c0;
+}
+.icon-input {
+  background-color: #f3f3f3;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+}
+form .text {
+  font-size: 14px;
+  color: #9d9d9d;
+}
+select#incoterms {
+  background: #f3f3f3;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  color: #9d9d9d;
+  height: 100%;
+}
+
+select:focus {
+  outline: none;
+}
+
+.flex-none {
+  display: block;
+}
+.flex-one {
+  flex: 1;
+}
+
+.width-half {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .first-line,
+  .second-line {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .icon-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .icon-input {
+    height: 35px;
+    flex: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form input {
+    width: 80%;
+  }
+}
