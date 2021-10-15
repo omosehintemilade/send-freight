@@ -15,6 +15,7 @@ export default function Booking() {
         <BsArrowLeft
           strokeWidth="1"
           style={{ fontSize: "20px", marginTop: "45px" }}
+          className="arrow-back"
         />
         <div className="booking-container">
           <div className="new-booking">

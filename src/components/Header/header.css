@@ -94,6 +94,7 @@ header {
   } */
   .logo-wrapper .logo-text {
     font-size: 14px;
+    margin-left: -7px;
   }
   .logo-form-wrapper form {
     display: none;
